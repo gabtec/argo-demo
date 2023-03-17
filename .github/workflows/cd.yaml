@@ -39,4 +39,6 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "CD Action"
           git commit -am "ci: update `goapp` image tag"
-          git push
+      # git push vai falhar porque no meu repo um user desconhecido is not allowed to push
+      - name: Push changes
+        uses: ad-m/github-push-action@master
