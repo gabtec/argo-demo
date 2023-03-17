@@ -42,5 +42,4 @@ jobs:
       # git push vai falhar porque no meu repo um user desconhecido is not allowed to push
       - name: Push changes
         uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+        # must go to repo settings and set workflow permissions to write
