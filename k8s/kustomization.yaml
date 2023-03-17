@@ -9,4 +9,4 @@ namespace: goapp
 images:
 - name: goapp
   newName: reg.gabtec.pt/kube/goapp
-  newTag: c2e8fb99e16775a980495c0298a5134ae5cf1fc4
+  newTag: 4dc8608315d828cd3890c04ced0430a40e503c70
