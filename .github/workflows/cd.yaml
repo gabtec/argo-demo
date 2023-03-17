@@ -24,7 +24,7 @@ jobs:
     needs: build
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Install Kustomize in this worker
         uses: imranismail/setup-kustomize@v2
         with:
@@ -42,3 +42,5 @@ jobs:
       # git push vai falhar porque no meu repo um user desconhecido is not allowed to push
       - name: Push changes
         uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
